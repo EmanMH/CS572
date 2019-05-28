@@ -1,0 +1,14 @@
+Why use setimmediate and settimeout?
+
+	When you want to run code async as soon as possible which is immediately after the running I/O queue use setImmediate 
+	When you want to process code async aftet a certain delay or in the next tick you can use setTimeout
+	
+	
+Difference between setImmediate vs Process.NextTick?
+
+  SetImmediate postopones the execution of the callback until immediately after polling I/O while process.nextTick runs immediately after the current process execution is done, regardless which queue was being processed
+  
+  
+ 10 core modules provided by node by default
+	
+	assert, buffer, crypto, timers, url, util, stream, fs, http, https
