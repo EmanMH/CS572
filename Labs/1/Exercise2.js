@@ -1,4 +1,4 @@
-let app={
+var app={
     promiseFetch:function ()
     {
         fetch('https://randomuser.me/api/').then(
@@ -52,8 +52,7 @@ let app={
     }
 }
 
-window.app=app;
-window.app.reactiveFetch();
+app.reactiveFetch();
 
 
 //All the three are asynchronous
