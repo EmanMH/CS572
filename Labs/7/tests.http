@@ -1,0 +1,29 @@
+GET http://localhost:8080/lectures
+
+###
+
+GET http://localhost:8080/lectures/1
+
+###
+
+GET http://localhost:8080/lectures/0
+
+###
+
+
+GET http://localhost:8080/lectures/search/mongo
+
+###
+
+POST http://localhost:8080/lectures HTTP/1.1
+content-type: application/json
+
+{"_id": "1", "course": "MWA", "lecture": "mongo"}
+###
+
+DELETE http://localhost:8080/lectures/1 HTTP/1.1
+
+###
+
+DELETE http://localhost:8080/lectures/0 HTTP/1.1
+
