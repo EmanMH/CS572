@@ -1,0 +1,61 @@
+
+
+GET http://localhost:8080/locations
+
+###
+
+GET http://localhost:8080/locations/1
+
+###
+
+GET http://localhost:8080/locations/0
+
+###
+
+
+GET http://localhost:8080/locations/search/Travel
+
+###
+
+
+GET http://localhost:8080/locations/search/Travel/Port2
+
+###
+
+POST http://localhost:8080/locations HTTP/1.1
+content-type: application/json
+
+{"_id": "1", "name": "Water works park","Category":"Entertainment", "location": [-91.9596508,41.0127315]}
+###
+
+
+POST http://localhost:8080/locations HTTP/1.1
+content-type: application/json
+
+{"_id": "2", "name": "Rec center","Category":"Sports", "location": [-91.964252,41.0136739]}
+###
+
+
+POST http://localhost:8080/locations HTTP/1.1
+content-type: application/json
+
+{"_id": "3", "name": "Maharishi school","Category":"Education", "location": [-91.9596508,41.0127315]}
+###
+
+POST http://localhost:8080/locations HTTP/1.1
+content-type: application/json
+
+{"_id": "4", "name": "DOT","Category":"Gov", "location": [-91.9651656,41.0094933]}
+###
+
+POST http://localhost:8080/locations HTTP/1.1
+content-type: application/json
+
+{"_id": "5", "name": "Air Port2","Category":"Travel", "location": [-87.9095101,41.9741625]}
+
+DELETE http://localhost:8080/locations/1 HTTP/1.1
+
+###
+
+DELETE http://localhost:8080/locations/0 HTTP/1.1
+

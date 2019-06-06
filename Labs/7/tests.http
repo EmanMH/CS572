@@ -10,7 +10,6 @@ GET http://localhost:8080/lectures/0
 
 ###
 
-
 GET http://localhost:8080/lectures/search/mongo
 
 ###
