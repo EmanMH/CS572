@@ -9,7 +9,7 @@ use mydb
 			"city": "$city"
 		},
 		zipcount: {
-			$sum: "$pop"
+			$sum:1
 		}
 	}
 }, {
